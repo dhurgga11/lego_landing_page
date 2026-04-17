@@ -1,1 +1,228 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
 
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgb(224, 246, 24);
+}
+
+/* LEFT */
+.nav-left .logo {
+  width: 70px;
+}
+
+/* CENTER */
+.nav-center {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-center a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+}
+
+/* RIGHT */
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-right img {
+  width: 22px;
+  cursor: pointer;
+}
+.logo {
+  width: 80px;
+}
+
+.nav-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  background: url('../images/Main Banner.png') center/cover no-repeat;
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* move content to left */
+  padding: 0 60px;
+}
+
+.hero-content {
+  text-align: left;
+  color: rgb(12, 12, 12);
+  max-width: 500px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background: yellow;
+  border: none;
+  margin-top: 10px;
+}
+
+/* ABOUT */
+.about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+/* CARDS WRAPPER */
+.cards-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* CARDS CONTAINER */
+.cards {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+  justify-content: center;
+
+  /* Auto-scroll animation */
+  animation: scrollCards 20s linear infinite;
+}
+
+/* Pause animation when hovering anywhere on cards */
+.cards:hover {
+  animation-play-state: paused;
+}
+
+/* INDIVIDUAL CARD */
+.card {
+  width: 300px;
+  min-width: 250px;   /* ensures consistent width */
+  flex-shrink: 0;     /* prevents shrinking */
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Hover effect on card */
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* KEYFRAMES for seamless scroll */
+@keyframes scrollCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* scroll halfway (because cards are duplicated) */
+  }
+}
+
+
+/* FOOTER */
+footer {
+  background: #2c003e; /* dark purple */
+  color: #fff;
+  padding: 2rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+.footer-left .lego-logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+.footer-left a {
+  color: #ffcf00;
+  text-decoration: none;
+}
+.footer-left a:hover {
+  text-decoration: underline;
+}
+
+.footer-columns {
+  display: flex;
+  flex: 3;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-col {
+  min-width: 180px;
+  margin: 1rem;
+}
+.footer-col h4 {
+  margin-bottom: 0.5rem;
+  color: #ffcf00;
+}
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+.footer-col ul li {
+  margin: 0.3rem 0;
+}
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-social {
+  text-align: center;
+  margin-top: 2rem;
+}
+.footer-social img {
+  width: 25px;
+  margin: 0 0.5rem;
+  filter: invert(100%); /* makes icons white */
+}
+.footer-social img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+/* DESKTOP RESPONSIVE */
+@media(min-width: 768px) {
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: row;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+}
