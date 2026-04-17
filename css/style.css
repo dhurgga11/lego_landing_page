@@ -9,26 +9,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;   /* smaller padding for mobile */
+  padding: 8px 16px;   
   background: rgb(224, 246, 24);
 }
 
 .logo {
-  width: 50px;         /* smaller logo size */
+  width: 50px;         
   height: auto;
 }
 
 .nav-center {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;           /* tighter spacing */
+  gap: 12px;           
 }
 
 .nav-center a {
   text-decoration: none;
   color: black;
   font-weight: 500;
-  font-size: 0.9rem;   /* smaller text for mobile */
+  font-size: 0.9rem;  
 }
 
 .nav-right {
@@ -37,7 +37,7 @@ body {
 }
 
 .nav-right img {
-  width: 18px;         /* smaller icons */
+  width: 18px;         
   cursor: pointer;
 }
 
@@ -56,7 +56,7 @@ body {
 }
 
 .hero h1 {
-  font-size: 2rem; /* mobile first */
+  font-size: 2rem; 
 }
 
 .hero button {
@@ -79,7 +79,7 @@ body {
 
 .cards {
   display: flex;
-  flex-wrap: wrap;   /* wrap into rows */
+  flex-wrap: wrap;  
   gap: 20px;
   padding: 20px;
   justify-content: center;
@@ -102,7 +102,7 @@ body {
 
 /* FOOTER */
 footer {
-  background: #2c003e; /* dark purple from mockup */
+  background: #2c003e; 
   color: #fff;
   padding: 2rem;
 }
@@ -187,11 +187,11 @@ footer {
 /* RESPONSIVE */
 @media (min-width: 768px) {
   .navbar {
-    padding: 15px 40px; /* more breathing room on desktop */
+    padding: 15px 40px; 
   }
 
   .logo {
-    width: 70px;       /* larger logo for desktop */
+    width: 70px;      
   }
 
   .nav-center a {
